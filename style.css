@@ -1,0 +1,623 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header img {
+    width: 100%;
+    height: 40vh;
+    object-fit: fill;
+}
+
+#main {
+    width: 100%;
+    height: 100vh;
+    background: url(./img/Curve\ Line.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.navbar {
+    background-color: #3C3633;
+    width: 100%;
+    margin: auto;
+    padding: 30px 0;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+.navbar .logo {
+    width: 10%;
+    margin: -20px 0 0 20px;
+}
+
+.checkbtn {
+  font-size: 30px;
+  color: #ffffff;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+    margin-right: 50px;
+}
+    
+.navbar ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.navbar ul li a:hover {
+    color: #ffee01;
+}
+
+#main h1 {
+    font-size: 75px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 170px 0 0 20px;
+}
+
+#main p {
+    margin: 10px 0 0 30px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#main button {
+    margin: 30px 0 0 30px;
+    width: 10%;
+    height: 5vh;
+    background-color: #ffee01;
+    border: 2px solid #000;
+    border-radius: 20px;
+}
+
+#main button a {
+    text-decoration: none;
+    color: #000;
+}
+
+#main button a i {
+    margin-left: 8px;
+}
+
+#main button:hover {
+    background: transparent;
+}
+
+#main .main-img {
+    float: right;
+    width: 53%;
+    margin: -292px 0 0 0;
+}
+
+#about {
+    height: 90vh;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#about img {
+    width: 25%;
+    margin: 40px 0 0 80px;
+    box-shadow: 10px 10px #3C3633;
+}
+
+#about h2 {
+    font-size: 60px;
+    margin: -480px 0 0 550px;
+}
+
+#about p {
+    float: right;
+    width: 55%;
+    text-align: justify;
+    margin: 30px 90px 0;
+}
+
+#services {
+    height: 90vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#services h2 {
+    font-size: 60px;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.service-item {
+    width: 30%;
+    display: inline-block;
+    margin: 20px;
+    border-top: 5px solid #ffee01;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: transform 0.3s ease-in-out;
+}
+
+.service-item:hover {
+    transform: translateY(-10px);
+}
+
+.service-item img {
+    width: 100%;
+    object-fit: fill;
+    margin-bottom: 5px;
+}
+
+.service-item h3 {
+    text-align: center;
+}
+
+.service-item p {
+    padding: 10px;
+    text-align: justify;
+}
+
+#location {
+    height: 90vh;
+}
+
+#location h2 {
+    font-size: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#location iframe {
+    margin-left: 270px;
+}
+
+footer {
+    background-color: #333;
+    font-family: 'Courier New', Courier, monospace;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.social-media {
+    list-style: none;
+    margin-bottom: 30px;
+}
+
+.social-media li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.social-media li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.social-media i {
+    font-size: 30px;
+    
+}
+
+.social-media i:hover {
+    color: #ffee01;
+}
+
+#faq {
+    min-height: 80vh;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+#faq h1 {
+    font-size: 40px;
+    text-align: center;
+    padding: 10px 0 20px;
+}
+
+.faq {
+    border-top: 2px solid #ccc;
+}
+
+.question {
+    margin-top: 30px;
+}
+
+.question-toggle {
+    display: none;
+}
+
+.question-label {
+    cursor: pointer;
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+
+.question-toggle:checked ~ .answer {
+    max-height: 1000px; 
+}
+
+.answer p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+}
+
+#contact-us {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#contact-us h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 40px;
+    color: #333;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form p {
+    padding-bottom: 20px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+.contact-form textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+.contact-form textarea:focus {
+    border-color: #007bff;
+}
+
+
+.contact-form button {
+    width: 100%;
+    padding: 10px 0;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #0056b3;
+}
+
+.contact-form input[type="text"]:focus,
+.contact-form input[type="email"]:focus {
+    border-color: #007bff;
+}
+
+.contact-form input[type="submit"] {
+    display: none;
+}
+
+/* For screens smaller than 768px (tablets) */
+@media only screen and (max-width: 768px) {
+    .checkbtn {
+        display: initial;
+        margin-right: 50px;
+    }
+  
+    .navbar ul {
+        position: fixed;
+        width: 50%;
+        height: auto;
+        background: #dee051;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+  
+    .navbar ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+  
+    .navbar ul li a {
+        font-size: 20px;
+    }
+  
+    .navbar a:hover {
+        background: none;
+    }
+  
+    #check:checked ~ ul {
+        left: 0;
+    }
+  
+    .navbar .logo {
+        width: 20%;
+        margin-left: 10px;
+    }
+  
+    #main {
+        height: 100vh;
+        background-size: contain;
+    }
+
+    #main h1 {
+        font-size: 50px;
+        margin: 40px 0 0 50px;
+        width: 70%;
+    }
+
+    #main p {
+        margin-left: 50px;
+    }
+
+    #main button {
+        width: 20%;
+        margin-left: 50px;
+    }
+
+    .main-img {
+        display: none;
+    }
+
+    #about {
+        margin-top: 80px;
+        height: 70vh;
+    }
+
+    #about img {
+        display: none;
+    }
+  
+    #about h2 {
+        font-size: 50px;
+        margin-left: 50px;
+    }
+  
+    #about p {
+        width: 90%;
+        margin: 10px 0 0 50px;
+        float: left;
+    }
+
+    #services {
+        height: 190vh;
+    }
+
+    #services h2 {
+        font-size: 40px;
+    }
+
+    .service-item {
+        width: 50%;
+        margin-left: 190px;
+    }
+    
+    #location {
+        height: 70vh;
+    }
+    
+    #location h2 {
+        font-size: 40px;
+    }
+
+    #location iframe {
+        width: 70%;
+        height: 50vh;
+        margin-left: 120px;
+    }
+  }
+  
+  /* For screens smaller than 480px (phones) */
+  @media only screen and (max-width: 480px) {
+    .checkbtn {
+        display: initial;
+        margin-right: 50px;
+    }
+
+    .navbar {
+        height: 2vh;
+    }
+  
+    .navbar ul {
+        position: fixed;
+        width: 50%;
+        height: auto;
+        background: #dee051;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+  
+    .navbar ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+  
+    .navbar ul li a {
+        font-size: 20px;
+    }
+  
+    .navbar a:hover {
+        background: none;
+    }
+  
+    #check:checked ~ ul {
+        left: 0;
+    }
+  
+    .navbar .logo {
+        width: 20%;
+        margin-left: 10px;
+    }
+  
+    #main {
+        height: 100vh;
+        background-size: contain;
+    }
+
+    #main h1 {
+        font-size: 30px;
+        margin: 20px 0 0 30px;
+        width: 60%;
+    }
+
+    #main p {
+        margin-left: 30px;
+        margin: 5px 0 10px 32px;
+        font-size: 10px;
+    }
+
+    #main button {
+        width: 15%;
+        height: 3vh;
+        margin: -20px 0 0 30px;
+        font-size: 8px;
+    }
+
+    .main-img {
+        display: none;
+    }
+
+    #about {
+        margin-top: 130px;
+        height: 70vh;
+    }
+
+    #about img {
+        display: none;
+    }
+  
+    #about h2 {
+        font-size: 30px;
+        margin-left: 30px;
+    }
+  
+    #about p {
+        width: 90%;
+        margin: 10px 0 0 30px;
+        font-size: 12px;
+        float: left;
+    }
+
+    #services {
+        height: 230vh;
+    }
+
+    #services h2 {
+        font-size: 30px;
+    }
+
+    .service-item {
+        width: 60%;
+        margin-left: 100px;
+    }
+    
+    #location {
+        height: 60vh;
+    }
+    
+    #location h2 {
+        font-size: 30px;
+    }
+
+    #location iframe {
+        width: 70%;
+        height: 40vh;
+        margin-left: 80px;
+    }
+
+    .social-media {
+        font-size: 10px;
+        margin-bottom: 10px;
+    }
+
+    footer p {
+        font-size: 15px;
+    }
+
+    #faq h1 {
+        font-size: 30px;
+    }
+
+    .faq .question-label, .answer p {
+        font-size: 15px;
+    }
+
+    #contact-us h2 {
+        font-size: 30px;
+    }
+
+    .contact-form {
+        width: 80%;
+    }
+
+    .contact-form p {
+        font-size: 13px;
+    }
+
+    .contact-form label {
+        font-size: 12px;
+
+    }
+  }
+  

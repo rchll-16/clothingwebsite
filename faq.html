@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./img/logo.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="navbar">
+        <img src="./img/logo.png" alt="Chill and Grind" class="logo">
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class='bx bx-menu'></i>
+        </label>
+        <ul>
+            <li><a href="main.html"><span>Home</span></a></li>
+            <li><a href="faq.html" style="color: #ffee01;">FAQ</a></li>
+        </ul>
+    </div>
+
+    <section id="faq">
+        <h1>Frequently Asked Questions</h1>
+        <div class="faq">
+            <div class="question">
+                <input type="checkbox" id="q1" class="question-toggle">
+                <label for="q1" class="question-label">Question 1: Do you offer international shipping?</label>
+                <div class="answer">
+                    <p>Yes, we offer international shipping to select countries. You can view the list of countries we ship to during checkout.</p>
+                </div>
+            </div>
+            <div class="question">
+                <input type="checkbox" id="q2" class="question-toggle">
+                <label for="q2" class="question-label">Question 2: What is your return policy?</label>
+                <div class="answer">
+                    <p>Our return policy allows you to return unworn and unwashed items within 30 days of purchase for a full refund. Please make sure to include the original packaging and tags.</p>
+                </div>
+            </div>
+            <div class="question">
+                <input type="checkbox" id="q3" class="question-toggle">
+                <label for="q3" class="question-label">Question 3: How do I determine my size?</label>
+                <div class="answer">
+                    <p>We provide detailed size charts for each product to help you find the perfect fit. You can find the size chart link on the product page next to the size options.</p>
+                </div>
+            </div>
+            <div class="question">
+                <input type="checkbox" id="q4" class="question-toggle">
+                <label for="q4" class="question-label">Question 4: Can I cancel or change my order after it has been placed?</label>
+                <div class="answer">
+                    <p>We process orders quickly to ensure fast shipping, but if you need to cancel or change your order, please contact our customer service team as soon as possible. We'll do our best to accommodate your request.</p>
+                </div>
+            </div>
+            <div class="question">
+                <input type="checkbox" id="q5" class="question-toggle">
+                <label for="q5" class="question-label">Question 5: How can I contact customer support?</label>
+                <div class="answer">
+                    <p>You can reach our customer support team via email at chillandgrind6@gmail.com or through our online contact form. We strive to respond to all inquiries within 24 hours.</p>
+                </div>
+            </div>
+            <div class="question">
+                <input type="checkbox" id="q6" class="question-toggle">
+                <label for="q6" class="question-label">Question 6: Are your products ethically sourced?</label>
+                <div class="answer">
+                    <p>We are committed to ethical and sustainable practices. Our products are sourced from reputable suppliers who adhere to fair labor standards and environmentally friendly production methods.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact-us">
+        <h2>Contact Us</h2>
+        <div class="contact-form">
+            <p>If you have any need from our shop or any types of quries related to our shop, you can send message from here. It's our pleasure to help you.</p>
+            <form action="#" method="POST" class="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+    
+</body>
+</html>
